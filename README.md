@@ -1,2 +1,2 @@
-# ChaoticUniverse
+# ChaoticCosmology
 Cisneros Lab
