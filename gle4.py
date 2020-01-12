@@ -158,19 +158,21 @@ for nTry in range(nTries):
     masterCounter0 += len(MasterPlots[nTry][0]);
     
     plt.figure(1)
-    plt.plot(BackPlots[nTry][1], BackPlots[nTry][3], 'b', FrontPlots[nTry][1], FrontPlots[nTry][3], 'r')
+    plt.plot(BackPlots[nTry][1], BackPlots[nTry][3], 'b.', FrontPlots[nTry][1], FrontPlots[nTry][3], 'r.')
     plt.xlabel('x2')
     plt.ylabel('x4')
     
     plt.figure(2)
-    plt.plot(BackPlots[nTry][0], BackPlots[nTry][1], 'b', FrontPlots[nTry][0], FrontPlots[nTry][1], 'r')
+    plt.plot(BackPlots[nTry][0], BackPlots[nTry][1], 'b.', FrontPlots[nTry][0], FrontPlots[nTry][1], 'r.')
     plt.xlabel('x1')
     plt.ylabel('x2')
     
     plt.figure(3)
     ax = plt.axes(projection='3d')
-    ax.plot3D(BackPlots[nTry][0], BackPlots[nTry][1], BackPlots[nTry][2], BackPlots[nTry][3])
-    ax.plot3D(FrontPlots[nTry][0], FrontPlots[nTry][1], FrontPlots[nTry][2], FrontPlots[nTry][3])
+    # ax.plot3D(BackPlots[nTry][0], BackPlots[nTry][1], BackPlots[nTry][2], BackPlots[nTry][3], 'b.')
+    # ax.plot3D(FrontPlots[nTry][0], FrontPlots[nTry][1], FrontPlots[nTry][2], FrontPlots[nTry][3], 'r.')
+    ax.plot3D(BackPlots[nTry][0], BackPlots[nTry][1], BackPlots[nTry][2], 'b.')
+    ax.plot3D(FrontPlots[nTry][0], FrontPlots[nTry][1], FrontPlots[nTry][2], 'r.')
     ax.set_xlabel('x (x1)')
     ax.set_ylabel('y (x2)')
     ax.set_zlabel('z (x3)')
