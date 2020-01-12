@@ -7,7 +7,7 @@ Created on Sat Jan 11 12:03:40 2020
 """
 import numpy as np
 import matplotlib.pyplot as plt
-# from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d import Axes3D
 
 beta = 6
 rho = 8
